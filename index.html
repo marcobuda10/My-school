@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivio Scolastico - Home</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #ecf0f1; color: #333; margin: 0; padding: 40px 20px; text-align: center; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        p { color: #7f8c8d; font-size: 18px; margin-bottom: 40px; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+        .year-btn { background-color: #2c3e50; color: white; border: none; padding: 25px; font-size: 18px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: block; }
+        .year-btn:hover { background-color: #3498db; transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📚 Archivio Digitale Programmi Svolti</h1>
+    <p>Seleziona l'anno scolastico per accedere alle materie e alle spiegazioni dettagliate.</p>
+    <div class="menu-grid">
+        <a href="anno1.html" class="year-btn">1° Anno</a>
+        <button class="year-btn" onclick="alert('Programma in fase di caricamento...')">2° Anno</button>
+        <button class="year-btn" onclick="alert('Programma in fase di caricamento...')">3° Anno</button>
+        <button class="year-btn" onclick="alert('Programma in fase di caricamento...')">4° Anno</button>
+        <button class="year-btn" onclick="alert('Programma in fase di caricamento...')">5° Anno</button>
+    </div>
+</div>
+</body>
+</html>

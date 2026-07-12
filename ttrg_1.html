@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TTRG 1° Anno - Approfondimento</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f6f7; color: #333; padding: 30px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h1 { color: #d35400; border-bottom: 2px solid #d35400; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 30px; }
+        .theory-box { background: #fdfefe; border-left: 4px solid #d35400; padding: 15px; margin: 15px 0; line-height: 1.6; }
+        .example-box { background: #f8f9fa; border-left: 4px solid #2ecc71; padding: 15px; margin: 15px 0; font-family: 'Courier New', monospace; white-space: pre-wrap; }
+        .back-btn { display: inline-block; padding: 10px 20px; background: #7f8c8d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        .back-btn:hover { background: #2c3e50; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="anno1.html" class="back-btn">⬅ Torna alle Materie</a>
+    <h1>📐 Tecnologie e Tecniche di Rappresentazione Grafica (1° Anno)</h1>
+
+    <h2>1. Normative di Unificazione e Costruzioni Geometriche</h2>
+    <div class="theory-box">
+        <strong>Spiegazione Teorica e Regole Tecniche:</strong><br>
+        Il disegno tecnico è governato dalle norme internazionali ISO e nazionali UNI per garantire l'univocità di lettura in tutto il mondo[cite: 607]. 
+        • <strong>Fogli e Squadratura (UNI EN ISO 5457):</strong> Il formato base di riferimento è l'A0 (superficie di 1 m²). Il formato standard scolastico è l'A3 (420x297 mm)[cite: 609]. Ogni tavola necessita di squadratura e di un cartiglio (UNI EN ISO 7200) posizionato in basso a destra contenente i dati del disegno[cite: 610].<br>
+        • <strong>Gerarchia dei tratti (UNI EN ISO 128):</strong> Le linee continue grosse (Spessore ~0.5 mm) si usano per spigoli e contorni in vista. Le linee continue fini (~0.25 mm) si usano per linee di costruzione e quote. Le linee tratteggiate indicano spigoli nascosti[cite: 611].
+    </div>
+    <div class="example-box">
+        <strong>Procedura Pratica - Divisione di un segmento in N parti uguali (Teorema di Talete):</strong>
+        Dato un segmento AB di lunghezza qualsiasi, si vuole dividerlo graficamente in 5 parti uguali senza righello millimetrato[cite: 623]:
+        1. Traccia una linea semiretta inclinata a piacere partendo dall'estremo A.
+        2. Con il compasso ad apertura fissa, segna 5 segmenti consecutivi sulla semiretta (punti 1, 2, 3, 4, 5).
+        3. Congiungi l'ultimo punto (5) con l'estremo finale del segmento originario (B).
+        4. Con le due squadre accoppiate, traccia le parallele alla linea 5-B passanti per i punti 4, 3, 2, 1.
+        Risultato: Le intersezioni sul segmento AB lo divideranno perfettamente in 5 parti esatte[cite: 623].
+    </div>
+
+    <h2>2. Proiezioni Ortogonali (Geometria Descrittiva Mongiana)</h2>
+    <div class="theory-box">
+        <strong>Spiegazione Teorica Fondamentale:</strong><br>
+        Il metodo delle proiezioni ortogonali di Gaspard Monge proietta un oggetto tridimensionale ortogonalmente (con raggi perpendicolari a 90°) su tre piani perpendicolari tra loro per ottenerne le viste bidimensionali esterne complete[cite: 633, 636]:
+        • <strong>P.V. (Piano Verticale):</strong> Mostra la vista Frontale (prospetto)[cite: 633].
+        • <strong>P.O. (Piano Orizzontale):</strong> Mostra la vista dall'Alto (pianta)[cite: 633].
+        • <strong>P.L. (Piano Laterale):</strong> Mostra la vista di Fianco (profilo)[cite: 633].
+        I piani si intersecano sulla <strong>L.T. (Linea di Terra)</strong>. Nel disegno si ribalta il P.O. e il P.L. per visualizzarli tutti su un unico foglio piatto bidimensionale.
+    </div>
+    <div class="example-box">
+        <strong>Esempio di Coordinate Mongiane: Proiezione di un Punto P(X, Y, Z)</strong>
+        Ogni entità nello spazio mongiano è identificata da tre valori[cite: 639]:
+        - <strong>X (Ascissa):</strong> Posizione lungo la Linea di Terra.
+        - <strong>Y (Distanza / Aggetto):</strong> Distanza dal Piano Verticale (si misura sul P.O. andando verso il basso).
+        - <strong>Z (Quota):</strong> Altezza dal Piano Orizzontale (si misura sul P.V. andando verso l'alto).
+        
+        <i>Esempio di tracciamento per P(3, 4, 5):</i>
+        Si misura 3 cm sulla Linea di Terra partendo dall'origine. Da quel punto si traccia una linea verticale perpendicolare. Si misura 5 cm verso l'alto per trovare P'' (proiezione sul PV) e 4 cm verso il basso per trovare P' (proiezione sul PO). Con il compasso puntato all'incrocio degli assi, si ribalta la misura dell'aggetto sul PL incontrando la retta di quota per determinare P'''[cite: 639].
+    </div>
+
+    <h2>3. Laboratorio: Metrologia e Calcolo degli Errori nelle Misure</h2>
+    <div class="theory-box">
+        <strong>Spiegazione Teorica e Formule Meccaniche:</strong><br>
+        In laboratorio meccanico la misurazione non è mai perfetta ma risente di approssimazioni e tolleranze[cite: 652, 656].
+        • <strong>Sensibilità:</strong> La minima variazione della grandezza che lo strumento può rilevare (es. il calibro ventesimale ha sensibilità 1/20 mm = 0.05 mm)[cite: 656, 657].
+    </div>
+    <div class="example-box">
+        <strong>Formule per il Calcolo degli Errori e della Precisione nelle Misure Fisiche:</strong>
+
+        • <strong>Valore Attendibile (Media Aristmetica):</strong>
+          X_m = (X₁ + X₂ + ... + X_n) / n
+
+        • <strong>Errore Assoluto (Semi-dispersione massima):</strong>
+          E_a = (Valore_Massimo - Valore_Minimo) / 2
+          *Nota: Se l'errore assoluto calcolato è inferiore alla sensibilità dello strumento, si assume la sensibilità come errore.*
+
+        • <strong>Errore Relativo (Indice di precisione adimensionale):</strong>
+          E_r = E_a / X_m
+
+        • <strong>Errore Percentuale:</strong>
+          E_p = E_r · 100 %
+
+        <strong>Esempio di Calcolo Pratico:</strong>
+        Tre misurazioni dello spessore di un tondino di acciaio con calibro centesimale danno: 12.40 mm, 12.42 mm, 12.38 mm[cite: 657, 668].
+        - Valore Attendibile = (12.40 + 12.42 + 12.38) / 3 = 12.40 mm
+        - Errore Assoluto = (12.42 - 12.38) / 2 = 0.02 mm
+        - Risultato Misura = (12.40 ± 0.02) mm
+        - Errore Percentuale = (0.02 / 12.40) · 100 = 0.16 % (Misura estremamente precisa).
+    </div>
+</div>
+</body>
+</html>
